@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import LessonViewer from './LessonViewer';
 import { 
   BookOpen, 
-  Code, 
   Trophy, 
   Target, 
   ChevronRight, 
@@ -12,7 +12,6 @@ import {
   Award,
   CheckCircle
 } from 'lucide-react';
-import LessonViewer from './LessonViewer';
 
 interface Topic {
   id: string;
@@ -20,10 +19,9 @@ interface Topic {
   difficulty: 'Beginner' | 'Intermediate' | 'Advanced';
   progress: number;
   recommended: boolean;
-  description: string;f
+  description: string;
   completed?: boolean;
 }
-
 interface Achievement {
   id: string;
   name: string;
